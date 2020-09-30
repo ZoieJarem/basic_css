@@ -1,4 +1,76 @@
+*,
+*:before,
+*::after {
+  box-sizing: inherit;
+}
+
+/*this is an id, best to use classes whenever possible rather the id*/
+#the-one {
+  color: darkblue;
+}
+html {
+  box-sizing: border-box;
+  font-size: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.5rem;
+}
+body {
+  background-color: lightcyan;
+  max-width: 1000px;
+  margin: 0 auto;
+}
 h1 {
-  color: yellow;
-  background-color: blue;
+  color: aqua;
+  background-color: black;
+  font-size: 3rem;
+  line-height: 3rem;
+  margin-left: 0.5rem;
+}
+
+a {
+  text-decoration: underline;
+  background-color: lightblue;
+}
+a:visited {
+  color: blue;
+}
+a:hover {
+  color: aqua;
+  background-color: royalblue;
+}
+a:active {
+  color: red;
+}
+
+/*this is a comment and is not code*/
+
+p {
+  font-family: "Courier New", Courier, monospace;
+  font-weight: Bold;
+  /*letter spaceing:0.2rem;*/
+  word-spacing: 0.3rem;
+  color: #00ff00;
+  color: black;
+}
+
+.newcolor {
+  color: black;
+  background-color: lightcyan;
+}
+.box {
+  background-color: lightcoral;
+  width: 300px;
+  padding: 30px;
+  border-top: 10px solid black;
+  border-bottom: 10px solid black;
+  margin: 30px;
+}
+
+.standard-box {
+  box-sizing: content-box;
+}
+
+.border-box {
+  padding: 20px 20px 20px 20px;
+  box-sizing: border-box;
 }
